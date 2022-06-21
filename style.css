@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --hue: 194;
+  --color-select: hsla(var(--hue), 97%, 31%, 1);
+  --color-primary: #323238;
+  --color-modes: #E1E1E6;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  padding: 19.6rem 0 0 0;
+}
+
+main {
+  max-width: 82.1rem;
+
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hide {
+  display: none;
+}
+
+#panel-time {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.time {
+  font-size: 12.6rem;
+
+  display: flex;
+
+  color: var(--color-primary);
+}
+
+button {
+  cursor: pointer;
+  appearance: none;
+  border: none;
+  background-color: transparent;
+}
+
+.controls {
+  display: flex;
+  gap: 4rem;
+  fill: var(--color-primary);
+}
+
+#panel-modes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.2rem;
+}
+
+.mode {
+  background-color: var(--color-modes);
+  padding: 4.8rem 4.7rem;
+  border-radius: 2.4rem;
+  fill: var(--color-primary);
+}
+
+.select {
+  fill: #FFFFFF;
+  background-color: var(--color-select);
+}
